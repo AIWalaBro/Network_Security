@@ -9,6 +9,11 @@ __pycache__/
 # ignoring veirtual environment
 venv_network_security/
 
+.env
+logs
+networksecurity.egg-info
+
+
 # Distribution / packaging
 .Python
 build/
