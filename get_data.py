@@ -2,15 +2,26 @@ import os
 import sys
 import json
 
-from env import load-dotenv
+from dotenv import load_dotenv
+load_dotenv()
+
+# Collection MongoDB URL
+MONGO_DB_URL = os.getenv("MONGO_DB_URL")
+print(MONGO_DB_URL)
 
 import certifi
+ce = certifi.where()
+
 import pandas as pd
 import numpy as np
 import pymongo
 
-from networksecurity.exception import NetworkSecurityException
-from networksecurity.logger import logging
+
+from networksecurity.exception.exception import NetworkSecurityException
+
+from networksecurity.logger.logger import logging
+
+
 
 
 class NetworkDataExtract():
@@ -18,7 +29,7 @@ class NetworkDataExtract():
         try:
             pass
         except Exception as e:
-            raise  NetworkSecurityException (e, sys)
+            raise  NetworkSecurityException(e, sys)
         
 
     def csv_to_json_converter(self):
