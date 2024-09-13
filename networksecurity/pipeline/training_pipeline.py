@@ -2,7 +2,7 @@ import os
 import sys
 from networksecurity.exception.exception import NetworkSecurityException
 
-# confugure the components 
+# ingest the components 
 from networksecurity.components.data_ingestion import DataIngestion
 from networksecurity.components.data_validation import DataValidation
 from networksecurity.components.data_transformation import DataTransformation
@@ -34,6 +34,7 @@ from networksecurity.entity.artifact_entity import (
 class TrainingPipeline():
     def __init__(self):
         pass
+
     def start_data_ingestion(self):
         try:
             pass
