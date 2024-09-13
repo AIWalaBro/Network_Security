@@ -1,0 +1,29 @@
+from datetime import datetime
+import os
+from networksecurity.constant import training_pipeline
+
+print(training_pipeline.ARTIFACT_DIR)
+
+class TrainingPipelineConfig:
+    def __init__(self):
+        pass
+    
+class DataIngetsionConig:
+    def __init__(self):
+        pass
+
+class DataValidationConifg:
+    def __init__(self):
+        pass
+
+class ModelTrainingConfig:
+    def __init__(self):
+        pass
+
+class ModelEvaluationConfig:
+    def __init__(self):
+        pass
+
+class ModelPusherConfig:
+    def __init__(self):
+        pass
