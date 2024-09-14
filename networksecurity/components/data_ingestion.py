@@ -77,7 +77,7 @@ class DataIngestion:
 
             os.makedirs(dir_path, exist_ok=True)
 
-            logging.info(f"Exporting trian and test file path")
+            logging.info(f"Exporting train and test file path")
 
             train_set.to_csv(
                 self.data_ingestion_config.training_file_path, index=False, header = True
