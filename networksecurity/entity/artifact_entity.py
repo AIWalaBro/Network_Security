@@ -6,8 +6,8 @@ class TrainingPipelineArtifact:
         pass
 @dataclass    
 class DataIngetsionArtifact:
-    def __init__(self):
-        pass
+    trained_file_path:str
+    test_file_path:str
 @dataclass
 class DataValidationArtifact:
     def __init__(self):
